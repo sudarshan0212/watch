@@ -1,60 +1,37 @@
 <html>
 <head>
 <title>Validator</title>
-<script>
- /*function checkForm() {
-	
-		if(form.elements[i].value=="")
-		{
-		document.getElementById("x").innerHTML="Please Enter "+form.elements[i].name;
-		return false;
-		}
-		else
-		{
-		document.getElementById("x").innerHTML="";$('#d1').toggle();
-		return true;
-	    }
-     }
-	}*/
-</script>
 </head>
 <body>
-	 <center><font color="white"><h2>Registration Form</h2></font></center>
-     <form method="post" name="Regform">
-	 <table>
-	 <tr>
-     <td>First Name:</td><td><INPUT TYPE="text" NAME="First name" id="1"></td>
-     <td><div style="display:none" id="d1"><font size="3" color="#FF0000">Enter First Name</font></font></div></td>
-	 </tr>
-	 <tr>
-	 <td>Last Name:</td><td><INPUT TYPE="text" NAME="Last name" id="2"></td>
-	 <td><div style="display:none" id="d2"><font size="3" color="#FF0000">Enter Last Name</font></div></td>
-	 </tr>
-	 <tr>	
-	 <td>User Name:</td><td><INPUT TYPE="text" NAME="User name" id="3"></td>
-     <td><div style="display:none" id="d3"><font size="3" color="#FF0000">Enter User Name</font></div></td>
-	 </tr>
-	 <tr>
-	 <td>Password :</td><td><INPUT TYPE="password" NAME="Password " id="4"></td>
-	 <td><div style="display:none" id="d4"><font size="3" color="#FF0000">Enter Password</font></div></td>
-	 </tr>
-	 <tr>
-	 <td>Confirm Password:</td><td><INPUT TYPE="password" NAME="Confirm Password" id="5"></td>
-	 <td><div style="display:none" id="d5"><font size="3" color="#FF0000">Enter confirm password</font></div></td>
-	 </tr>
-	 <tr>
-     <td>Email Address:</td><td><INPUT TYPE="text" NAME="Email" id="email"></td><td><span id="email_feedback"></span></td>
-	 </tr>
-	 <tr>
-	 <td>Contact No:</td><td><INPUT TYPE="text" NAME="Contact" id="7"></td>
-	 <td><div style="display:none" id="d7"><font size="3" color="#FF0000">Enter Contact No</font></div></td>
-	 </tr>
-	 </table>
+	 <h2>Registration Form</h2>
+	 <span id="error"></span>
+     <form method="post" name="Regform" onSubmit="return checkForm();" action="#">
+	<p>
+     First Name<INPUT TYPE="text" NAME="First Name" id="1">
+  </p>
+  <p>
+	 Last Name:<INPUT TYPE="text" NAME="Last name" id="2">
+</p>
+<p>
+	Email Address:<INPUT TYPE="text" NAME="Email" id="3">
+</p>
+<p>
+    Password :<INPUT TYPE="password" NAME="Password " id="4">
+</p>
+<p>
+	Confirm Password:<INPUT TYPE="password" NAME="Confirm Password" id="5">
+</p>
+<p>
+	Contact No:<INPUT TYPE="text" NAME="Contact" id="6">
+	</p>
+	<p>
+	Terms and Condition:<INPUT TYPE="checkbox" NAME="terms" id="7">
+	</p>
      <INPUT TYPE="submit" value="Submit" id="toggle"></br>
 	 </form>
      <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="s.js"></script>
-	<script type="text/javascript" src="email.js"></script>
+	
 
 </body>
 </html>
