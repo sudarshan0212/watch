@@ -23,7 +23,7 @@ var contact=$('#6').val();
 var char1=/^[a-zA-Z]+$/ ;//characters
 var char2 = /^([a-zA-Z0-9_-]){8,15}$/;//alpanumeric
 var char3 = /^[0-9]+$/ ;//numbers
-var email=/^[A-Z0-9._%+-]+@(?:[A-Z0-9-]+\.)+[A-Z]{2,4}$/;
+var email=/^[a-zA-Z0-9._%+-]+@(?:[a-zA-Z0-9-]+\.)+[a-zA-Z]{2,4}$/;
 var count=0;
 if(blank())
 {
@@ -45,7 +45,7 @@ if(blank())
 	{
 		count++;
 	}
-  /* if(!email.test($('#3').val()))
+   if(!email.test($('#3').val()))
 	{
 		alert("Please enter valid email address");
 		return false;
@@ -53,7 +53,7 @@ if(blank())
 	else
 	{
 		count++;
-	}*/
+	}
 
 	if(!char2.test($('#4').val())&&!char2.test($('#5').val()))
 	{
