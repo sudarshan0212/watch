@@ -4,28 +4,34 @@
 </head>
 <body>
 	 <h2>Registration Form</h2>
-	 <span id="error"></span>
-     <form method="post" name="Regform" onSubmit="return checkForm();" action="#">
+	<form method="POST" name="Regform" onSubmit="return checkForm();" action="reg.php">
 	<p>
-     First Name<INPUT TYPE="text" NAME="First Name" id="1">
+     First Name<INPUT TYPE="text" NAME="fname" id="1">
+	 <span id="s1"><font color="#FF0000"></font></span>
   </p>
   <p>
-	 Last Name:<INPUT TYPE="text" NAME="Last name" id="2">
+	 Last Name:<INPUT TYPE="text" NAME="lname" id="2">
+	 <span id="s2"><font color="#FF0000"></font></span>
 </p>
 <p>
-	Email Address:<INPUT TYPE="text" NAME="Email" id="3">
+	Email Address:<INPUT TYPE="text" NAME="email" id="3">
+	<span id="s3"><font color="#FF0000"></font></span>
 </p>
 <p>
-    Password :<INPUT TYPE="password" NAME="Password " id="4">
+    Password :<INPUT TYPE="password" NAME="pass" id="4">
+	<span id="s4"><font color="#FF0000"></font></span>
 </p>
 <p>
-	Confirm Password:<INPUT TYPE="password" NAME="Confirm Password" id="5">
+	Confirm Password:<INPUT TYPE="password" NAME="cpass" id="5">
+	<span id="s5"><font color="#FF0000"></font></span>
 </p>
 <p>
-	Contact No:<INPUT TYPE="text" NAME="Contact" id="6">
+	Contact No:<INPUT TYPE="text" NAME="cnt" id="6">
+	<span id="s6"><font color="#FF0000"></font></span>
 	</p>
 	<p>
 	Terms and Condition:<INPUT TYPE="checkbox" NAME="terms" id="7">
+	<span id="s7"><font color="#FF0000"></font></span>
 	</p>
      <INPUT TYPE="submit" value="Submit" id="toggle"></br>
 	 </form>

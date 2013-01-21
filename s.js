@@ -1,3 +1,43 @@
+$('input:text').focusin(function(){
+var id_sel=$(this).attr('id');
+switch(id_sel)
+	{
+		case "1":
+			$('#s1').text(" ");
+			break;
+
+		case "2":
+			$('#s2').text(" ");
+			break;
+
+		case "3":
+			$('#s3').text(" ");
+			break;
+	  
+	case "6":
+			$('#s6').text(" ");
+			break;
+	case "7":
+			$('#s7').text(" ");
+			break;
+	}
+});
+
+$('input:password').focusin(function(){
+var id_s=$(this).attr('id');
+switch(id_s)
+	{
+	case "4":
+			$('#4').attr('value',"");
+	 		$('#s4').text(" ");
+			break;
+	case "5":
+			$('#5').attr('value',"");
+			$('#s5').text(" ");
+			break;
+	}
+});
+
 function blank()
 {
 var fname=$('#1').val();
@@ -29,7 +69,8 @@ if(blank())
 {
 	if(!char1.test($('#1').val()))
 	{
-			alert("First name should contain only characters");
+		    $('#s1').text("First name should contain only characters");
+	
 			return false;
 	}
 	else
@@ -38,7 +79,7 @@ if(blank())
 	}
 	if(!char1.test($('#2').val()))
 	{
-			alert("Last name should contain only characters");
+			$('#s2').text("Last name should contain only characters");
 			return false;
 	}
 	else
@@ -47,7 +88,7 @@ if(blank())
 	}
    if(!email.test($('#3').val()))
 	{
-		alert("Please enter valid email address");
+		$('#s3').text("Please enter valid email address");
 		return false;
 	}
 	else
@@ -57,12 +98,12 @@ if(blank())
 
 	if(!char2.test($('#4').val())&&!char2.test($('#5').val()))
 	{
-			alert("Password must be alphanumeric and 8-15 in length");
+			$('#s4').text("Password must be alphanumeric and 8-15 in length");
 			return false;
 	}
 	else if($('#4').val()!=$('#5').val())
 	{
-            		alert("Password and confirm password must be same");
+            		$('#s5').text("Password and confirm password must be same");
 					return false;
 	}
 	else
@@ -71,7 +112,7 @@ if(blank())
 	}
 	if(!char3.test($('#6').val()))
 	{
-		alert("Contact No should contain only numbers");		
+		$('#s6').text("Contact No should contain only numbers");		
 		return false;
 	}
 	else
@@ -84,7 +125,7 @@ if(blank())
 	}
 	else
 	{
-		alert("Accept Terms and Condition");
+		$('#s7').text("Accept Terms and Condition");
 		return false;
 	}
 }
